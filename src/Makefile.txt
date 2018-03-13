@@ -1,0 +1,28 @@
+Para Compilar:
+
+	javac app/MainClass.java
+
+Para executar:
+
+	java app.MainClass < nome_do_arquivo.txt
+
+
+Resultados:
+	couting.txt
+
+
+*** Insertion Sort ***
+Quantidade de elementos: 101
+Tempo decorrido: 0.0
+Quantidade de trocas: 2526
+
+*** Selection Sort ***
+Quantidade de elementos: 101
+Tempo decorrido: 0.0
+Quantidade de trocas: 298
+
+
+
+
+OBS.: O "tempo decorrido" pode variar de execução para execuação, em razão do
+escalonamento de processos do SO.
