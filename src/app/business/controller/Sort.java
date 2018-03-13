@@ -1,7 +1,10 @@
 package app.business.controller;
 
-public interface Sort
+public class Sort
 {
-	public int[] sort(int[] list);
-
+	public void run(int[] list, SortCommand sortType)
+	{
+		sortType.exec(list);
+	}
+	
 }
