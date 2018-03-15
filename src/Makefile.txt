@@ -19,7 +19,17 @@ Quantidade de trocas: 2526
 *** Selection Sort ***
 Quantidade de elementos: 101
 Tempo decorrido: 0.0
-Quantidade de trocas: 298
+Quantidade de trocas: 94
+
+*** Merge Sort ***
+Quantidade de elementos: 101
+Tempo decorrido: 0.0
+Quantidade de trocas: 279
+
+*** Quick Sort ***
+Quantidade de elementos: 101
+Tempo decorrido: 0.0
+Quantidade de trocas: 257
 
 
 

@@ -8,7 +8,7 @@ public class SelectionSort implements SortCommand
 	public int[] exec(int[] list)
 	{
 		// Adapted from wikipedia (https://pt.wikipedia.org/wiki/Selection_sort)
-		int numTrocas = 0;
+		int swapNum = 0;
         
 	    long startTime = System.currentTimeMillis(); 
 		
@@ -20,7 +20,6 @@ public class SelectionSort implements SortCommand
 				if (list[j] < list[posicaoMenor])
 				{
 					posicaoMenor = j;
-					numTrocas += 1;
 				}
 			}
 			if (list[i] != list[posicaoMenor])
@@ -28,6 +27,7 @@ public class SelectionSort implements SortCommand
 				int temp = list[i];
 				list[i] = list[posicaoMenor];
 				list[posicaoMenor] = temp;
+				swapNum ++;
 			}
 		}
 		
@@ -42,7 +42,7 @@ public class SelectionSort implements SortCommand
 	    System.out.println("*** Selection Sort ***\n"+
 	    				   "Quantidade de elementos: " + list.length +
 	    				   "\nTempo decorrido: " + TimePerSec +
-	    				   "\nQuantidade de trocas: " + numTrocas + "\n");
+	    				   "\nQuantidade de trocas: " + swapNum + "\n");
 		
 		return list;
 	}

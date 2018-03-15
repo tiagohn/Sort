@@ -7,7 +7,7 @@ public class InsertionSort implements SortCommand
 	public int[] exec(int[] list)
 	{
 		// Adapted from wikipedia (https://pt.wikipedia.org/wiki/Insertion_sort)
-		int numTrocas = 0;
+		int swapNum = 0;
         
 	    long startTime = System.currentTimeMillis(); 
 		
@@ -21,7 +21,7 @@ public class InsertionSort implements SortCommand
 			{
 				list[j] = list[j-1];
 				j -= 1;
-				numTrocas += 1;
+				swapNum += 1;
 			}
 			list[j] = current_value;
                 
@@ -38,7 +38,7 @@ public class InsertionSort implements SortCommand
 	    System.out.println("*** Insertion Sort ***\n"+
 	    				   "Quantidade de elementos: " + list.length +
 	    				   "\nTempo decorrido: " + TimePerSec +
-	    				   "\nQuantidade de trocas: " + numTrocas + "\n");
+	    				   "\nQuantidade de trocas: " + swapNum + "\n");
 		
 		return list;
 	}
