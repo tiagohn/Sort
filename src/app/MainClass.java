@@ -6,9 +6,11 @@ import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.List;
 
-import app.business.controller.InsertionSort;
-import app.business.controller.SelectionSort;
 import app.business.controller.Sort;
+import app.business.controller.sortingAlgorithms.InsertionSort;
+import app.business.controller.sortingAlgorithms.MergeSort;
+import app.business.controller.sortingAlgorithms.QuickSort;
+import app.business.controller.sortingAlgorithms.SelectionSort;
 
 /***************************************************
 *   UFPB - Universidade Federal da Paraíba
@@ -19,7 +21,7 @@ import app.business.controller.Sort;
 *  Profº.: 	GILBERTO FARIAS DE SOUSA FILHO  
 *
 *
-*           Algoritmos de ordenação
+*    Analise em algoritmos de ordenação
 * ------------------------------------------------
 *
 *
@@ -55,6 +57,8 @@ public class MainClass
             
             sort.run(cap.clone(), new InsertionSort());
             sort.run(cap.clone(), new SelectionSort());
+            sort.run(cap.clone(), new MergeSort());
+            sort.run(cap.clone(), new QuickSort());
             
          
         }

@@ -1,4 +1,6 @@
-package app.business.controller;
+package app.business.controller.sortingAlgorithms;
+
+import app.business.controller.SortCommand;
 
 public class SelectionSort implements SortCommand
 {
