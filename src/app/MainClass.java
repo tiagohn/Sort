@@ -7,6 +7,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 import app.business.controller.Sort;
+import app.business.controller.sortingAlgorithms.HeapSort;
 import app.business.controller.sortingAlgorithms.InsertionSort;
 import app.business.controller.sortingAlgorithms.MergeSort;
 import app.business.controller.sortingAlgorithms.QuickSort;
@@ -59,6 +60,7 @@ public class MainClass
             sort.run(cap.clone(), new SelectionSort());
             sort.run(cap.clone(), new MergeSort());
             sort.run(cap.clone(), new QuickSort());
+            sort.run(cap.clone(), new HeapSort());
             
          
         }
